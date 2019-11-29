@@ -4,17 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lab25_KlasaStatyczna
+namespace lab27_KlasaSealed
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine( Kalkulator.Dodaj(2.3m, 3.4m));
 
+            KlasaPochodna klasaPoch = new KlasaPochodna();
+            klasaPoch.Test();
+            KlasaBardziejPochodna bardzPoch = new KlasaBardziejPochodna();
+            bardzPoch.Test();
             Console.ReadKey();
         }
-
-
     }
 }

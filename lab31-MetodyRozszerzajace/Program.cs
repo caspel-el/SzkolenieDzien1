@@ -4,17 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lab25_KlasaStatyczna
+namespace lab31_MetodyRozszerzajace
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine( Kalkulator.Dodaj(2.3m, 3.4m));
+            Console.WriteLine("Wprowadz tekst:");
+            string jakisTekst = Console.ReadLine();
+            Console.WriteLine(jakisTekst.ZliczSlowa());
+
 
             Console.ReadKey();
         }
-
-
     }
 }
